@@ -1,0 +1,49 @@
+Overview
+Write a C++ program that operates as described below.
+
+Your program should accept four command line arguments. Argument 1 is either “i” or “s”, arguments 2 and 3 are the names of the input files.
+
+Your program will read streams of data from the input files until end-of-file. If argument 1 is “i” then the data will be integer values, but if argument 1 is “s” the data will be strings of visible characters. Both kinds of values will be separated by whitespace (blanks, tabs, newlines).
+
+Your program should sort the data from both files using mergesort if argument 1 is "i" and quicksort if argument 1 is "s". Both sort functions are O(n lg n). It is recommended to use the algorithms in ZyBooks.
+
+Your program will write to standard out all the data (integers or strings) that appear in both of the input files. The data output should be sorted in ascending order, either numerically for integers or lexicographically for strings. Write one value per line, and discard any duplicate values; a value should only be output once, no matter how many times it appears.
+
+There will be no more than 20,000 data items in each file.
+
+Your program should behave as shown in the following two examples:
+
+./p2 i in1.txt in2.txt
+
+in1.txt	in2.txt	standard output
+17 63
+-25 409
+63 -8 0
+-321 17	330 -4 -8
+96 25
+25 17 -4	-8
+17
+./p2 s in3.txt in4.txt
+
+in3.txt	in4.txt	standard output
+zebra bird dog
+moose fish
+fish cat bird	cat pig
+snake cow
+bird
+pig dog lion
+horse cat	bird
+cat
+dog
+Notes
+Assume valid input.
+Format your output exactly like the example above.
+Do not include libraries other than iostream, fstream, sstream, string, cctype, climits, cstring
+Testing
+The example test case(s) can be downloaded below. It is recommended to create your own test cases in addition to the examples provided. You can share your test cases with classmates to compare output. Try to test different parts of the code independently for boundary cases not present in the example(s).
+
+It is advised to submit to the format checker project to verify the output format and that it works in the ZyBooks *nix environment for the example(s) provided. You can submit to the tester unlimited times, and it is not graded.
+
+If you would like to work in a *nix environment to test your code, you may remote into the cs-intro server and compile and run code there. Instructions are on blackboard in the basics cs intro server pdf.
+
+Submitting & Grading
